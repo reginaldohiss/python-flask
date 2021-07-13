@@ -14,5 +14,3 @@ def index() :
   nome = 'Sallys'
   lista = ['https://www.youtube.com/embed/jJ7p8ObqbHk', 'https://www.youtube.com/embed/vJ-3mQLKxSU', 'https://www.youtube.com/embed/0LB3FSfjvao', 'https://www.youtube.com/embed/N1hTsbW50eM']
   return render_template('index.html', nome=nome, lista=lista)
-
-app.run(host='0.0.0.0', port=5000)
