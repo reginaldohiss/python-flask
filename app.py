@@ -6,11 +6,6 @@ STATIC = './static'
 app = Flask(__name__, template_folder=TEMPLATES, static_folder=STATIC)
 
 @app.route('/')
-def helloWorld() :
-  return 'Hello world!'
-
-@app.route('/index')
 def index() :
-  nome = 'Sallys'
   lista = ['https://www.youtube.com/embed/jJ7p8ObqbHk', 'https://www.youtube.com/embed/vJ-3mQLKxSU', 'https://www.youtube.com/embed/0LB3FSfjvao', 'https://www.youtube.com/embed/N1hTsbW50eM']
-  return render_template('index.html', nome=nome, lista=lista)
+  return render_template('index.html', lista=lista)
