@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        {% for usuario in usuarios: %}
+            <tr>
+                <td>{{ usuario.nome }}</td>
+                <td>{{ usuario.email }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
