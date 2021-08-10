@@ -10,6 +10,7 @@ app.register_blueprint(usuario_blueprint)
 
 # Configuração do Banco de Dados
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./dados.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 with app.app_context():
